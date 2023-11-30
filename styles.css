@@ -1,0 +1,78 @@
+
+/*
+background: define como vai ser o background, podendo ter uma imagem, uma cor, um gradiente etc...
+display: é como a classe/elemento vai ser mostrado na tela
+align-tems: como os itens dentro dessa classe/elemento vão ser alinhados, sendo escolhido o centro.
+font-size: tamanho da fonte
+margin-top/bottom: serve para determinar o espaço que ficará entre o elemento/classe em questão aos outros elementos do html.
+*/
+
+body {
+    background: linear-gradient(to bottom, #a3b18a, #344E41);
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.established {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.menu {
+    width: 80%;
+    background-color: #dad7cd;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    min-width: 600px;
+    max-width: 500px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto 10px;
+}
+
+select, button {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

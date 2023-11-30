@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Aqui ficará o título do site (o nome que aparecerá na guia) +-->
+        <!-- e embaixo é a conexão desse html ao css que se encontra no arquivo nomeado dentro de href.-->
+        <title>Floricultura</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="menu">
+        <main>
+            <h1>FLORICULTURA PLP</h1>
+            <p class="established">Desde 2023</p>
+            <hr>
+            <!--Esse formulário, diferentemente do Pagina_Floricultura, vai ser do tipo que o cliente irá-->
+            <!--escrever uma string. -->
+            <form id="formulario" action="Pagina_Floricultura.html" method="post">
+                <h2>Informações do Cliente</h2>
+                <article class="item">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                </article>
+                <article class="item">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+                </article>
+                <article class="item">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                </article>
+                <button type="submit">Enviar</button>
+            </form>
+            <hr>
+        </main>
+        </div>
+    </body>
+</html>

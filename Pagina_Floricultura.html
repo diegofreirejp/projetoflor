@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Aqui ficará o título do site (o nome que aparecerá na guia) +-->
+        <!-- e embaixo é a conexão desse html ao css que se encontra no arquivo nomeado dentro de href.-->
+        <title>Floricultura</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <main>
+            <!--o div serve para divisão de código, e, como eu fiz nesse caso, essa divisão pode ser feita com o-->
+            <!--intuito de atribuir uma única classe a uma parte grande do código. Facilitando as atribuições no CSS. -->
+            <div class="menu">
+            <h1>FLORICULTURA PLP</h1>
+            <p>Desde 2023</p>
+            <hr>
+
+                <h2>Faça seu pedido</h2>
+                <!--O action direcionará o usuário a página citada (como não há uma continuação além dessa página ele só irá dar um F5.) -->
+                <!--E o formulário vai ser do tipo de escolher uma das opções de uma pequena tabela. -->
+                <form action="Pagina_Floricultura.html" method="post">
+                    <label for="flores">Escolha a flor:</label>
+                    <article class = "item"></article>
+                    <select id="flores" name="flores">
+                        <option value="orquidea_roxa">Orquídea Roxa</option>
+                        <option value="orquidea_amarela">Orquídea Amarela</option>
+                        <option value="rosa_vermelha">Rosa Vermelha</option>
+                        <option value="rosa_amarela">Rosa Amarela</option>
+                        <option value="tulipa_rosa">Tulipa Rosa</option>
+                        <option value="tulipa_branca">Tulipa Branca</option>
+                        <option value="girassol_amarelo">Girassol Amarelo</option>
+                    </select>
+                    </article>
+
+                    <article class="item">
+                    <label for="vasos">Escolha o vaso:</label>
+                    <select id="vasos" name="vasos">
+                        <option value="pequeno">Pequeno (P)</option>
+                        <option value="medio">Médio (M)</option>
+                        <option value="grande">Grande (G)</option>
+                    </select>
+                    </article>
+
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            <hr>
+            </div>
+        </main>
+    </body>
+</html>

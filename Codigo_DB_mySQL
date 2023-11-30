@@ -1,0 +1,32 @@
+-- Código feito no Workbench do mySQL
+
+CREATE DATABASE FloriculturaDB;
+
+USE FloriculturaDB;
+
+
+CREATE TABLE Cliente (
+    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE Pedido (
+    id_pedido INT PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
+    flor VARCHAR(50) NOT NULL,
+    vaso VARCHAR(50) NOT NULL
+);
+
+
+ALTER TABLE Cliente ADD COLUMN cpf VARCHAR(14) NOT NULL;
+ALTER TABLE Cliente ADD COLUMN telefone VARCHAR(16) NOT NULL;
+
+
+INSERT INTO Cliente (nome, cpf, telefone) VALUES ('Nome do Cliente', '123.456.789-00', '(12) 3456-7890');
+INSERT INTO Pedido (id_cliente, data_pedido, flor, vaso) VALUES (1, '2023-12-01', 'Orquídea Roxa', 'Pequeno');
+
+SELECT Cliente.nome, Cliente.cpf, Cliente.telefone, Pedido.flor, Pedido.vaso
+FROM Cliente
+JOIN Pedido ON Cliente.id_cliente = Pedido.id_cliente;
